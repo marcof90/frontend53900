@@ -5,6 +5,7 @@ import App from './App'
 import NotFound from './pages/NotFound'
 import Login from './pages/auth/Login'
 import Register from './pages/auth/Register'
+import Account from './pages/account/Account'
 
 export default function Router() {
     return (
@@ -13,6 +14,7 @@ export default function Router() {
             <Route path={'/home'} element={<App />} />
             <Route path={'/login'} element={<Login />} />
             <Route path={'/register'} element={<Register />} />
+            <Route path={'/app'} element={<Account />} />
 
             <Route path="*" element={<NotFound />} />
         </Routes>
